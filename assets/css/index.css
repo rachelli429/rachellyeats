@@ -9,7 +9,7 @@
 
 /**
  * fonts
- * font-family: Quicksand;
+ * font-family: Avenir;
  */
 
 html {
@@ -27,25 +27,15 @@ html {
  	--light-gray: #dfdfdf;
  	--white: #FEFEFA;
  	color: var(--gray);
- 	background-image: url("what-the-hex.png");
+ 	background-image: url("funky-lines.png");
     background-repeat: repeat;
  }
 
  /*** animations ***/
 
- @keyframes fadeIn {
-   from { opacity: 0; }
-   to { opacity: 1; }
-}
-
 @keyframes rotate360deg { 
   from { transform:rotate(0deg); }
   to { transform:rotate(360deg); }
-}
-
-@keyframes pullOut {
-	from { left:0px; }
-	to { left: 10px; }
 }
 
 /*** sidebar ***/
@@ -185,6 +175,17 @@ html {
 	justify-content: center;
 }
 
+#about-content a {
+	color: var(--dark-theme);
+	text-decoration: none;
+	font-weight: bold;
+}
+
+#about-content a:hover {
+	letter-spacing: 1px;
+	transition: 0.4s;
+}
+
 #about-right {
 	display: flex;
 	flex-direction: column;
@@ -236,6 +237,7 @@ html {
 }
 
 /*** locations ***/
+
 #locations {
 	display: flex;
 	flex-direction: column;
@@ -298,6 +300,14 @@ html {
 
 .location-name {
 	text-align: center;
+	font-size: 24px;
+	color: var(--dark-theme);
+	font-weight: bold;
+}
+
+.location-name:hover {
+	letter-spacing: 4px;
+	transition: 0.4s;
 }
 
 /*** carousel ***/
@@ -334,7 +344,7 @@ html {
 	position: relative;
 	display: flex;
 	flex-direction: column;
-	align-items: space-evenly;
+	justify-content: space-around;
 }
 
 .carousel-title {
@@ -343,7 +353,9 @@ html {
 	color: var(--dark-theme);
 	font-weight: bold;
 	text-shadow: 4px 4px 3px var(--light-gray); 
-	height: 50px;
+	margin-bottom: -20px;
+	margin-top: 10px;
+	text-transform: lowercase;
 }
 
 .carousel-title:hover {
@@ -398,6 +410,7 @@ html {
 }
 
 /*** picture flip box ***/
+
 .flip {
     width: 200px;
 	height: 200px;
@@ -434,5 +447,10 @@ html {
 }
 
 .restaurant-link:hover {
-	text-decoration: underline;
+	letter-spacing: 1px;
+	transition: 0.4s;
+}
+
+.restaurant-link:visited {
+	color: var(--dark-theme);
 }
