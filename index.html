@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="assets/css/index.css" rel="stylesheet" type="text/css">
+    <!--quicksand font-->
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Quicksand" />
+    <!--cookie font-->
+    <link href='http://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="assets/js/script.js"></script>
+    <!--jquery flip plugin-->
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="assets/js/jquery.flip.min.js"></script>
+    <!--jquery scroll reveal-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <title>eat with Rachel</title>
+    <meta charset="utf-8">
+</head>
+<body>
+    <!--sidebar-->
+    <div id="sidebar">
+        <div class="sidebar-section">
+            <a href="#home" class="sidebar-button"></a>
+            <div class="sidebar-description">home</div>
+        </div>
+        <div class="sidebar-section">
+            <a href="#about" class="sidebar-button"></a>
+            <div class="sidebar-description">about</div>
+        </div>
+        <div class="sidebar-section">
+            <a href="#locations" class="sidebar-button"></a>
+            <div class="sidebar-description">locations</div>
+        </div>
+    </div>
+    <!--end sidebar-->
+    <div>
+    <!--home-->
+    <div id="home">
+        <div><img id="home-photo" src="assets/images/me home.jpg" /></div>
+        <div id="home-content">
+            <div id="home-content-pt1">eat with</div>
+            <div id="home-content-pt2">Rachel</div>
+            <div id="home-content-pt3">through the bay + dmv!</div>
+        </div>
+    </div>
+    <!--end home-->
+
+    <!--about-->
+    <div id="about">
+        <div id="about-left">
+            <div id="about-title">— about</div>
+            <div id="about-content">
+                <p>Hi! I’m a freshman at UC Berkeley, intending to major in Statistics or Data Science. I’m Chinese-American and from Maryland. </p>
+                <p>Some things I love are journalism, making vlogs, puzzles, Disney movies, and food! I run a food Instagram and love finding new restaurants to try. I wanted a place where I could consolidate all the restaurants I’ve been to in an aesthetic fashion, which is why I’m making this website.</p>
+                <p>Some of my favorite foods include: boba (especially honeydew milk tea or peach green tea), sushi, poke, cheesecake, Sour Patch Kids, McDonald’s chicken nuggets, mac & cheese, and anything sweet!</p>
+            </div>
+        </div>
+        <div id="about-right">
+             <div><img id="about-photo" src="assets/images/me about.JPG" /></div>
+             <div id="social">
+                <a class="social-button" href="https://www.facebook.com/rachel.li.429"><img src="assets/images/facebook white.svg" /></a>
+                <a class="social-button" href="https://www.linkedin.com/in/rachelli429/"><img src="assets/images/linkedin white.svg" /></a>
+                <a class="social-button" href="http://instagram.com/rachellyeats"><img src="assets/images/instagram white.svg" /></a>
+                <a class="social-button" href="https://www.youtube.com/channel/UCcfVklYryyi09J2B7Ei7rOA"><img src="assets/images/youtube white.svg" /></a>
+             </div>
+        </div>
+    </div>
+    <!--end about-->
+
+    <!--locations-->
+    <div id="locations">
+        <div id="locations-title">— locations</div>
+        <div id="food-locations">
+            <div class="food-location">
+                <div class="location-icon" id="0"><img class="location-image" src="assets/images/california white.png" /></div>
+                <p class="location-name">bay area</p>
+            </div>
+            <div class="food-location">
+                <div class="location-icon" id="1"><img src="assets/images/maryland white.png" width="125px" /></div>
+                <p class="location-name">maryland</p>
+            </div>
+            <div class="food-location">
+                <div class="location-icon" id="2"><img class="location-image" src="assets/images/globe white.png" /></div>
+                <p class="location-name">other</p>
+            </div>
+       </div>
+
+    <!--carousel-->
+    <div id="lightbox">
+        <div id="left"> &lt; </div>
+        <div id="carousel-container">
+            <div id="carousel-strip">
+                <div class="carousel-section">
+                    <div class="pictures-row">
+                        <div class="flip">
+                            <div class="front">
+                                <img src="assets/images/gadani.JPG" />
+                            </div>
+                            <div class="back">
+                                <a href="https://gadani.business.site/" class="restaurant-link">Gadani</a>
+                                <p>📍Downtown Berkeley
+                                <br>🍨Ice Cream
+                                <br>💲$6-8
+                                <br>❤️Chocolate S'mores Puffle
+                                <br>💭v aesthetic, would've liked more ice cream than puffle though
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flip">
+                            <div class="front">
+                                <img src="assets/images/ippudo.JPG" />
+                            </div>
+                            <div class="back">
+                                <a href="http://ippudo-us.com/ " class="restaurant-link">Ippudo</a>
+                                <p>📍Downtown Berkeley
+                                <br>🍜Ramen 
+                                <br>💲$13-15 
+                                <br>❤️Akamaru Modern, Shiromaru Classic
+                                <br>💭thin noodles aren’t really my thing :/ you get unlimited $2 refills though!
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flip">
+                            <div class="front">
+                                <img src="assets/images/super duper.JPG" />
+                            </div>
+                            <div class="back">
+                                <a href="http://superduperburgers.com/" class="restaurant-link">Super Duper</a>
+                                <p>📍Berkeley Southside
+                                <br>🍔Burgers
+                                <br>💲$6
+                                <br>❤️Mini Burger w/ Cheese
+                                <br>💭pretty good, apparently the ice cream is good
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="pictures-row">
+                        <div class="flip">
+                            <div class="front">
+                                <img class="restaurant-image" src="assets/images/gypsy's.JPG" />
+                            </div>
+                            <div class="back">
+                                 <a href="http://www.gypsysitaliana.com/" class="restaurant-link">Gypsy's</a>
+                                 <p>
+                                <br>📍Asian Ghetto
+                                <br>🍜Italian
+                                <br>💲$10-12
+                                <br>❤️Godfather’s Favorite, Bronx Tale
+                                <br>💭so far the best Italian place I’ve been to, you can get it to go, pricey but worth it    
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flip">
+                            <div class="front">
+                                <img class="restaurant-image" src="assets/images/manpuku.jpg" />
+                            </div>
+                            <div class="back">
+                                <a href="https://manpukuorder.com/users/login" class="restaurant-link">Manpuku</a>
+                                <p>📍Berkeley Southside
+                                <br>🍣Sushi
+                                <br>💲$6-8
+                                <br>❤️Manpuku Roll, Rainbow Roll
+                                <br>💭best sushi place so far!
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flip">
+                            <div class="front">
+                                <img class="restaurant-image" src="assets/images/berkeley social club.JPG" />
+                            </div>
+                            <div class="back">
+                                <a href="https://www.berkeley-socialclub.com/" class="restaurant-link">Berkeley Social Club</a>
+                                <p>📍Downtown Berkeley
+                                <br>🥞Brunch
+                                <br>💲$14-16
+                                <br>❤️Blueberry Stuffed French Toast
+                                <br>💭pricey but super good
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!--dmv-->
+                <div class="carousel-section">
+                    
+                    <div class="pictures-row">
+                        <div class="flip">
+                            <div class="front">
+                                <img class="restaurant-image" src="assets/images/&pizza.JPG" />
+                            </div>
+                            <div class="back">
+                                <a href="https://andpizza.com/" class="restaurant-link">&pizza</a>
+                                <p>📍North Bethesda, MD
+                                <br>🥞Pizza
+                                <br>💲$9-10
+                                <br>❤️American Honey Pizza
+                                <br>💭not overpriced, v filling, love the hot honey sauce
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flip">
+                            <div class="front">
+                                <img class="restaurant-image" src="assets/images/bluefin sushi.JPG" />
+                            </div>
+                            <div class="back">
+                                <a href="http://bluefingeorgetown.com/" class="restaurant-link">Bluefin Sushi</a>
+                                <p>📍Georgetown, DC
+                                <br>🥞Sushi
+                                <br>💲$6
+                                <br>❤️Rainbow Roll & Spicy Tuna Roll
+                                <br>💭in a p hidden part of gtown so hard to find, but good
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flip">
+                            <div class="front">
+                                <img class="restaurant-image" src="assets/images/first watch.JPG" />
+                            </div>
+                            <div class="back">
+                                <a href="https://www.firstwatch.com/" class="restaurant-link">First Watch</a>
+                                <p>📍Rockville, MD
+                                <br>🥞Brunch
+                                <br>💲$8-10
+                                <br>❤️Matcha Latte Pancakes, Chocolate Chip Pancakes
+                                <br>💭one of my fav brunch places!
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="pictures-row">
+                        <div class="flip">
+                            <div class="front">
+                                <img class="restaurant-image" src="assets/images/miele bakery.JPG" />
+                            </div>
+                            <div class="back">
+                                <a href="http://www.mielebakery.com/p/home.html" class="restaurant-link">Miele Bakery</a>
+                                <p>📍Rockville, MD
+                                <br>🥞Brunch
+                                <br>💲$10
+                                <br>❤️Mango Bingsoo
+                                <br>💭pricey but you can split w friends (we split 3 way)
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flip">
+                            <div class="front">
+                                <img class="restaurant-image" src="assets/images/thai pavillion.JPG" />
+                            </div>
+                            <div class="back">
+                                <a href="http://www.thaipavilionrestaurant.com/" class="restaurant-link">Miele Bakery</a>
+                                <p>📍Rockville, MD
+                                <br>🥞Thai
+                                <br>💲$10-12
+                                <br>❤️Chicken Pad Thai
+                                <br>💭servings are kinda small
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flip">
+                            <div class="front">
+                                <img class="restaurant-image" src="assets/images/lab cafe.JPG" />
+                            </div>
+                            <div class="back">
+                                <a href="http://rockvilletownsquare.com/restaurants-and-cafes/lab-cafe" class="restaurant-link">Lab Cafe</a>
+                                <p>📍Rockville, MD
+                                <br>🥞Boba, Dessert
+                                <br>💲$4-5 for boba, $10-12 for dessert
+                                <br>❤️Chocolate Bliss Lab Honey Toast
+                                <br>💭great place to study, aesthetic, you can write sticky notes for the wall and has fun games
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            
+                <!--other-->
+                <div class="carousel-section">
+                    
+                    <div class="pictures-row">
+                        <div class="flip">
+                            <div class="front">
+                                <img class="restaurant-image" src="assets/images/fractured prune.JPG" />
+                            </div>
+                            <div class="back">
+                                <p>description</p>
+                            </div>
+                        </div>
+
+                        <div class="flip">
+                            <div class="front">
+                                <img class="restaurant-image" src="assets/images/rehoboth acai bowl.JPG" />
+                            </div>
+                            <div class="back">
+                                <p>description</p>
+                            </div>
+                        </div>
+
+                        <div class="flip">
+                            <div class="front">
+                                <img class="restaurant-image" src="assets/images/bonkey's.jpg" />
+                            </div>
+                            <div class="back">
+                                <p>description</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="pictures-row">
+                        <div class="flip">
+                            <div class="front">
+                                <img class="restaurant-image" src="assets/images/london.JPG" />
+                            </div>
+                            <div class="back">
+                                <p>description</p>
+                            </div>
+                        </div>
+
+                        <div class="flip">
+                            <div class="front">
+                                <img class="restaurant-image" src="assets/images/germany pizza 2.JPG" />
+                            </div>
+                            <div class="back">
+                                <p>description</p>
+                            </div>
+                        </div>
+
+                        <div class="flip">
+                            <div class="front">
+                                <img class="restaurant-image" src="assets/images/rome ice cream.JPG" />
+                            </div>
+                            <div class="back">
+                                <p>description</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div id="right"> &gt; </div>
+        <div id="x-button">X</div>
+    </div>
+    <!--end locations-->
+
+
+
+</body>
+</html>
