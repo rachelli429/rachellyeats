@@ -27,7 +27,7 @@ html {
  	--light-gray: #dfdfdf;
  	--white: #FEFEFA;
  	color: var(--gray);
- 	background-image: url("funky-lines.png");
+ 	background-image: url("what-the-hex.png");
     background-repeat: repeat;
  }
 
@@ -129,7 +129,7 @@ html {
 }
 
 #home-content-pt1 {
-	font-size: 84px;
+	font-size: 64px;
 }
 
 #home-content-pt2 {
@@ -198,7 +198,7 @@ html {
 	border-style: solid;
 	border-radius: 50%;
 	border-color: var(--dark-theme);
-	box-shadow: 5px 5px 10px 5px #dfdfdf;
+	box-shadow: 5px 5px 10px 5px var(--light-gray);
 }
 
 #social {
@@ -334,6 +334,21 @@ html {
 	position: relative;
 	display: flex;
 	flex-direction: column;
+	align-items: space-evenly;
+}
+
+.carousel-title {
+	text-align: center;
+	font-size: 48px;
+	color: var(--dark-theme);
+	font-weight: bold;
+	text-shadow: 4px 4px 3px var(--light-gray); 
+	height: 50px;
+}
+
+.carousel-title:hover {
+	letter-spacing: 5px;
+	transition: 0.4s;
 }
 
 #left, #right {
